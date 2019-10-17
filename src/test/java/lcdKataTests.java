@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class lcdKataTests {
+public class LcdKataTests {
 
     @Test
     public void stringShouldBeGottenByPosition(){

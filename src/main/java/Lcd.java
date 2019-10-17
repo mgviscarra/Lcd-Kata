@@ -2,26 +2,26 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Lcd {
-    private static final String _NONE = "   ";
-    private static final String _LEFT = "  |";
-    private static final String _MIDL = " _ ";
-    private static final String _MDLT = " _|";
-    private static final String _MDRT = "|_ ";
-    private static final String _FULL = "|_|";
-    private static final String _BOTH = "| |";
+    private static final String NONE = "   ";
+    private static final String LEFT = "  |";
+    private static final String MIDL = " _ ";
+    private static final String MDLT = " _|";
+    private static final String MDRT = "|_ ";
+    private static final String FULL = "|_|";
+    private static final String BOTH = "| |";
 
     private static final Map<Integer, String[]> SEGMENTS_FOR_DIGITS = new HashMap<Integer, String[]>() {
         {
-            put(new Integer(1), new String[] { _NONE, _LEFT, _LEFT });
-            put(new Integer(2), new String[] { _MIDL, _MDLT, _MDRT });
-            put(new Integer(3), new String[] { _MIDL, _MDLT, _MDLT });
-            put(new Integer(4), new String[] { _NONE, _FULL, _LEFT });
-            put(new Integer(5), new String[] { _MIDL, _MDRT, _MDLT });
-            put(new Integer(6), new String[] { _MIDL, _MDRT, _FULL });
-            put(new Integer(7), new String[] { _MIDL, _LEFT, _LEFT });
-            put(new Integer(8), new String[] { _MIDL, _FULL, _FULL });
-            put(new Integer(9), new String[] { _MIDL, _FULL, _MDLT });
-            put(new Integer(0), new String[] { _MIDL, _BOTH, _FULL });
+            put(new Integer(1), new String[] {NONE, LEFT, LEFT});
+            put(new Integer(2), new String[] {MIDL, MDLT, MDRT});
+            put(new Integer(3), new String[] {MIDL, MDLT, MDLT});
+            put(new Integer(4), new String[] {NONE, FULL, LEFT});
+            put(new Integer(5), new String[] {MIDL, MDRT, MDLT});
+            put(new Integer(6), new String[] {MIDL, MDRT, FULL});
+            put(new Integer(7), new String[] {MIDL, LEFT, LEFT});
+            put(new Integer(8), new String[] {MIDL, FULL, FULL});
+            put(new Integer(9), new String[] {MIDL, FULL, MDLT});
+            put(new Integer(0), new String[] {MIDL, BOTH, FULL});
         }
     };
 
